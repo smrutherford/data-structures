@@ -5,6 +5,9 @@ var Stack = function() {
   var storage = {};
   var size = 0;
   var values = [];
+  values.forEach(function(item, i){
+    storage[i] = item;
+  });
 
   // Implement the methods below
   someInstance.push = function(value) {
